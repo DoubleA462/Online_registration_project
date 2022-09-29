@@ -18,23 +18,74 @@
             </div>
          </div>
          <div>
-            <H1>Signup for our newsletter</H1>
+            <H2>Signup for our newsletter</H2>
             <p>Get the latest news on how your code is doing right in your inbox</p>
         </div>
     </header>
 
-    <br>
-    <br>
+    <br class="br1">
+    <br class="br2">
 
     <main>
-        <fieldset>
-            <legend>Contact Information</legend>
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="user-name">
-        </fieldset>
+        <div class="container">
+            <form action="index.html" method="post">
+    
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="user-name">
+                    
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="user-email">
+                    
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="user-phone">
+                    
+                    <label for="address1">Street Address</label>
+                    <input type="text" id="address1" name="user-address1">
+                    
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="user-city">
+                    
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="user-state">
 
-      
+                    <label for="zip">Zip Code</label>
+                    <input type="text" id="zip" name="user-zip">
+            
+                </fieldset>
+
+                <br class="br2">
+
+                <fieldset>
+                    <legend>Newsletter</legend>
+                    <p>Select the newsletter you would like to recieve</p>
+
+                    <input type="checkbox" id="html_news" value="interest_html_news" name="user_interest"><label class="light" for="html_news">HTML News</label><br>
+                    <input type="checkbox" id="css_news" value="interest_css_news" name="user_interest"><label class="light" for="css_news">CSS News</label><br>
+                    <input type="checkbox" id="javascript_news" value="interest_javascript_news" name="user_interest"><label class="light" for="javascript_news">Javascript News</label><br>
+
+                    <p>Newsletter format</p>
+                    <input type="checkbox" id="html" value="interest_html" name="user_interest"><label class="light" for="html">HTML</label><br>
+                    <input type="checkbox" id="plain_text" value="interest_plain_text" name="user_interest"><label class="light" for="plain_text">Plain Text</label><br>
+
+                    <p>Other topics you'd liek to heat about</p>
+                    <textarea id="other-topics"></textarea>
+
+                    <button>Sign Up</button>
+
+                </fieldset>
+
+            </form>
+        </div>
     </main>
+
+    <footer>Copyright The Code Review</footer>
+
+ 
+    
+       
     
 </body>
 </html>

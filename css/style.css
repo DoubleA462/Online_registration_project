@@ -96,7 +96,7 @@ legend {
 }
 
 input {
-    transition: background-color 2s;
+    transition: background-color 1s;
 }
 
 textarea {

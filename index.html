@@ -23,32 +23,33 @@
         </div>
     </header>
 
-    <hr class="hr1">
-    <hr class="hr2">
 
     <main>
         <div class="container">
             <form action="index.html" method="post">
+
+                <hr class="hr1">
+                <hr class="hr2">
     
                 <fieldset class="fieldset1">
                     <legend>Contact Information</legend>
+                
+                    <label class="top" for="name">Full Name</label>
+                    <input required type="text" id="name" name="user-name" placeholder="Required">
                     
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="user-name" placeholder="Required">
+                    <label class="top" for="email">Email Address</label>
+                    <input required type="email" id="email" name="user-email" placeholder="Required">
                     
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="user-email" placeholder="Required">
+                    <label class="top" for="phone">Phone Number</label>
+                    <input required type="tel" id="phone" name="user-phone"  placeholder="Required">
                     
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="user-phone">
+                    <label class="top" for="address1">Street Address</label>
+                    <input required type="text" id="address1" name="user-address1"  placeholder="Required">
                     
-                    <label for="address1">Street Address</label>
-                    <input type="text" id="address1" name="user-address1">
+                    <label class="top" for="city">City</label>
+                    <input required type="text" id="city" name="user-city"  placeholder="Required">
                     
-                    <label for="city">City</label>
-                    <input type="text" id="city" name="user-city">
-                    
-                    <label for="state">State</label>
+                    <label class="top" for="state">State</label>
                     <select name="state" id="state">
                         <option value="" disabled selected hidden>Choose State</option>
                         <option value="Alabama">Alabama</option>                        
@@ -103,8 +104,9 @@
                         <option value="Wyoming">Wyoming</option>                        
                     </select>
 
-                    <label for="zip">Zip Code</label>
-                    <input type="text" id="zip" name="user-zip">
+                    <label class="top" for="zip">Zip Code</label>
+                    <input required type="text" id="zip" name="user-zip"  placeholder="Required">
+                
             
                 </fieldset>
 
@@ -122,15 +124,16 @@
                     <input type="radio" id="html" value="interest_html" name="user_interest"><label class="light" for="html">HTML</label><br>
                     <input type="radio" id="plain_text" value="interest_plain_text" name="user_interest"><label class="light" for="plain_text">Plain Text</label><br>
 
-                    <p class="other">Other topics you'd liek to heat about</p>
+                    <p class="other">Other topics you'd like to heat about</p>
                     <label for="other-topics"></label>
                     <textarea id="other-topics" name="other-topics"></textarea>
 
                     <button>Sign Up</button>
 
                 </fieldset>
-
+                
             </form>
+
         </div>
     </main>
 

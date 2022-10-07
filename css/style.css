@@ -61,7 +61,7 @@ h2 {
 }
 
 fieldset {
-    border: 0;
+    border: none;
     padding: 0;
     
 }
@@ -70,6 +70,7 @@ legend {
     font-size: 20px;
     font-weight: bold;
     padding-bottom: .5em;
+   
 }
 
 .fieldset1 label{
@@ -91,6 +92,11 @@ legend {
     text-align: left;
     font-style: italic;
     border-radius: 5px;
+
+}
+
+input {
+    transition: background-color 2s;
 }
 
 textarea {
@@ -99,6 +105,7 @@ textarea {
 
 input, ::placeholder {
     text-align: right;
+    
 }
 
 #state {
@@ -135,7 +142,7 @@ input, ::placeholder {
     display: block;
     margin-top: 1em;
     margin-bottom: 1em;
-    background-color: rgb(121, 133, 138);
+    background-color: rgb(151, 165, 171);
 }
 
 .fieldset2 input, label{
@@ -178,6 +185,7 @@ footer {
 
 input:focus, textarea:focus {
     outline: 3px solid rgb(36, 228, 253);
+    background-color: rgb(125, 235, 255);
 }
 
 /* Media Queries */
